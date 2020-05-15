@@ -1,0 +1,12 @@
+#comment {
+    overflow-wrap: anywhere;
+}
+
+#form {
+    background-color: red;
+    color: white;
+}
+
+#bgnImage {
+    background-image: url('../img/post-bg.jpg');
+}
