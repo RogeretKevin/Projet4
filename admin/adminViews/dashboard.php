@@ -30,7 +30,7 @@ if(isset($_SESSION['admin']) AND !empty($_SESSION['admin']))
               <div class="row no-gutters align-items-center">
                 <div class="col mr-2">
                   <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Nombres de chapitres</div>
-                  <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $nbPosts ?></div>
+                  <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $nbPosts['nbPosts']; ?></div>
                 </div>
                 <div class="col-auto">
                   <i class="fas fa-book-open fa-2x text-gray-300"></i>
@@ -47,7 +47,7 @@ if(isset($_SESSION['admin']) AND !empty($_SESSION['admin']))
               <div class="row no-gutters align-items-center">
                 <div class="col mr-2">
                   <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Nombres de commentaires</div>
-                  <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $nbComments ?></div>
+                  <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $nbComments['nbComments'] ?></div>
                 </div>
                 <div class="col-auto">
                   <i class="fas fa-comments fa-2x text-gray-300"></i>
@@ -64,7 +64,7 @@ if(isset($_SESSION['admin']) AND !empty($_SESSION['admin']))
               <div class="row no-gutters align-items-center">
                 <div class="col mr-2">
                   <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Nombres de messages</div>
-                  <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $nbForms ?></div>
+                  <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $nbForms['nbForm'] ?></div>
                 </div>
                 <div class="col-auto">
                   <i class="fas fa-envelope fa-2x text-gray-300"></i>

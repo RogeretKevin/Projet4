@@ -16,11 +16,26 @@ private function dbConnect()
     }
 }
 
-public function getCounter($valeur)
+public function counterPosts()
 {
     $db = $this->dbConnect();
-    $req = $db->prepare('SELECT COUNT(*) FROM :name');
-    $req->execute(array('name' => $valeur));
+    $req = $db->query('SELECT COUNT(*) AS nbPosts FROM billets');
+    $result = $req->fetch();
+    return $result;
+}
+
+public function counterComments()
+{
+    $db = $this->dbConnect();
+    $req = $db->query('SELECT COUNT(*) AS nbComments FROM comments');
+    $result = $req->fetch();
+    return $result;
+}
+
+public function counterForm()
+{
+    $db = $this->dbConnect();
+    $req = $db->query('SELECT COUNT(*) AS nbForm FROM form');
     $result = $req->fetch();
     return $result;
 }

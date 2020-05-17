@@ -5,9 +5,9 @@ require_once('adminModel/ModelBackend.php');
 function counter()
 {
     $modelManager = new ModelBackend();
-    $nbPosts = $modelManager->getCounter('billets');
-    $nbComments = $modelManager->getCounter('comments');
-    $nbForms = $modelManager->getCounter('form');
+    $nbPosts = $modelManager->counterPosts();
+    $nbComments = $modelManager->counterComments();
+    $nbForms = $modelManager->counterForm();
     require('adminViews/dashboard.php');
 }
 
