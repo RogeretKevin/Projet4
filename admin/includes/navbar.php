@@ -174,7 +174,7 @@
             cours.</div>
           <div class="modal-footer">
             <button class="btn btn-secondary" type="button" data-dismiss="modal">Annuler</button>
-            <a class="btn btn-primary" href="adminIndex?p=logout">Déconnexion</a>
+            <a class="btn btn-primary" href="adminIndex.php?p=logout">Déconnexion</a>
           </div>
         </div>
       </div>

@@ -45,7 +45,7 @@ else if ($_GET['p'] == 'deletePost' && isset($_GET['id']) && $_GET['id'] > 0) {
 else if ($_GET['p'] == 'logout') {
     session_start();
     session_destroy();
-    header('location:../login.php');
+    header('location:../index.php');
 }
 
 // CHARGE LES CHAPITRES SUR LA PAGE COMMENT //
