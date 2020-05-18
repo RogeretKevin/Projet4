@@ -1,0 +1,4 @@
+AuthName "Page d'administration protégée"
+AuthType Basic
+AuthUserFile "/home/u575697151/domains/rogeret-kevin.xyz/public_html/jean-forteroche/model/.htpasswd"
+Require valid-user
